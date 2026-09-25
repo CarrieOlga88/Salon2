@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Салон красоты Fleur — Шаблон</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Иконки FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Файл стилей -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Шапка / Навигация -->
+    <header class="header" id="header">
+        <div class="container header-container">
+            <a href="#" class="logo">
+                <span class="logo-title">FLEUR</span>
+                <span class="logo-subtitle">САЛОН КРАСОТЫ</span>
+            </a>
+
+            <nav class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="#about" class="nav-link">О нас</a></li>
+                    <li><a href="#services" class="nav-link">Услуги и цены</a></li>
+                    <li><a href="#portfolio" class="nav-link">Работы</a></li>
+                    <li><a href="#masters" class="nav-link">Мастера</a></li>
+                    <li><a href="#reviews" class="nav-link">Отзывы</a></li>
+                    <li><a href="#contacts" class="nav-link">Контакты</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <a href="tel:+79000000000" class="header-phone">
+                    <i class="fa-solid fa-phone"></i>
+                    <span>+7 (900) 000-00-00</span>
+                </a>
+                <button class="btn btn-primary open-modal-btn">Записаться</button>
+                <button class="mobile-toggle" id="mobile-toggle" aria-label="Открыть меню">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Первый экран (Hero) -->
+    <section class="hero" id="hero">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <span class="hero-subtitle">Пространство вашей красоты и стиля</span>
+            <h1 class="hero-title">Ваша естественная привлекательность в руках профессионалов</h1>
+            <p class="hero-description">Премиальный уход, современные методики и неповторимая атмосфера заботы в самом центре города.</p>
+            <div class="hero-buttons">
+                <button class="btn btn-primary open-modal-btn">Онлайн-запись</button>
+                <a href="#services" class="btn btn-outline">Смотреть услуги</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- О нас / Преимущества -->
+    <section class="section about" id="about">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-subtitle">Почему выбирают нас</span>
+                <h2 class="section-title">Совершенство в каждой детали</h2>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fa-solid fa-award"></i>
+                    </div>
+                    <h3 class="feature-title">Топ-мастера</h3>
+                    <p class="feature-desc">Специалисты высокой квалификации с регулярным обучением у мировых экспертов.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fa-solid fa-pump-soap"></i>
+                    </div>
+                    <h3 class="feature-title">Премиум-косметика</h3>
+                    <p class="feature-desc">Используем исключительно сертифицированные средства от лучших мировых брендов.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fa-solid fa-shield-cat"></i>
+                    </div>
+                    <h3 class="feature-title">100% Безопасность</h3>
+                    <p class="feature-desc">Многоступенчатая стерилизация инструментов и соблюдение строжайших гигиенических норм.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fa-solid fa-mug-hot"></i>
+                    </div>
+                    <h3 class="feature-title">Уютный сервис</h3>
+                    <p class="feature-desc">Ароматный кофе, чаи экзотических сортов, расслабляющая музыка и атмосфера отдыха.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Услуги и Прайс-лист -->
+    <section class="section services" id="services">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-subtitle">Прайс-лист</span>
+                <h2 class="section-title">Популярные услуги</h2>
+            </div>
+
+            <div class="tabs-control">
+                <button class="tab-btn active" data-tab="hair">Парикмахерский зал</button>
+                <button class="tab-btn" data-tab="nails">Ногтевой сервис</button>
+                <button class="tab-btn" data-tab="cosmetology">Косметология</button>
+                <button class="tab-btn" data-tab="spa">SPA и Массаж</button>
+            </div>
+
+            <div class="tab-content active" id="tab-hair">
+                <div class="services-list">
+                    <div class="service-item">
+                        <div class="service-info">
+                            <h4 class="service-name">Женская стрижка и укладка</h4>
+                            <p class="service-detail">Консультация, мытье головы, стрижка, сушка по форме</p>
+                        </div>
+                        <div class="service-meta">
+                            <span class="service-time">60 мин</span>
+                            <span class="service-price">от 2 500 ₽</span>
+                            <button class="btn btn-sm btn-primary open-modal-btn">Записаться</button>
+                        </div>
+                    </div>
+
+                    <div class="service-item">
+                        <div class="service-info">
+                            <h4 class="service-name">Сложное окрашивание (Airtouch / Balayage)</h4>
+                            <p class="service-detail">Индивидуальный подбор тона, осветление, тонирование, уход</p>
+                        </div>
+                        <div class="service-meta">
+                            <span class="service-time">180 мин</span>
+                            <span class="service-price">от 7 000 ₽</span>
+                            <button class="btn btn-sm btn-primary open-modal-btn">Записаться</button>
+                        </div>
+                    </div>
+
+                    <div class="service-item">
+                        <div class="service-info">
+                            <h4 class="service-name">Премиальный уход для волос</h4>
+                            <p class="service-detail">Глубокое восстановление структуры волос и придание блеска</p>
+                        </div>
+                        <div class="service-meta">
+                            <span class="service-time">90 мин</span>
+                            <span class="service-price">от 4 000 ₽</span>
+                            <button class="btn btn-sm btn-primary open-modal-btn">Записаться</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-content" id="tab-nails">
+                <div class="services-list">
+                    <div class="service-item">
+                        <div class="service-info">
+                            <h4 class="service-name">Комплексный маникюр с покрытием Gel-Color</h4>
+                            <p class="service-detail">Снятие, аппаратный/комби маникюр, выравнивание, покрытие</p>
+                        </div>
+                        <div class="service-meta">
+                            <span class="service-time">90 мин</span>
+                            <span class="service-price">2 200 ₽</span>
+                            <button class="btn btn-sm btn-primary open-modal-btn">Записаться</button>
+                        </div>
+                    </div>
+
+                    <div class="service-item">
+                        <div class="service-info">
+                            <h4 class="service-name">Smart-Педикюр с обработкой стоп</h4>
+                            <p class="service-detail">Полная обработка пальцев и стоп по смарт-технологии с уходом</p>
+                        </div>
+                        <div class="service-meta">
+                            <span class="service-time">80 мин</span>
+                            <span class="service-price">3 000 ₽</span>
+                            <button class="btn btn-sm btn-primary open-modal-btn">Записаться</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-content" id="tab-cosmetology">
+                <div class="services-list">
+                    <div class="service-item">
+                        <div class="service-info">
+                            <h4 class="service-name">Комбинированная чистка лица</h4>
+                            <p class="service-detail">Ультразвуковая + механическая чистка, маска по типу кожи</p>
+                        </div>
+                        <div class="service-meta">
+                            <span class="service-time">90 мин</span>
+                            <span class="service-price">3 500 ₽</span>
+                            <button class="btn btn-sm btn-primary open-modal-btn">Записаться</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-content" id="tab-spa">
+                <div class="services-list">
+                    <div class="service-item">
+                        <div class="service-info">
+                            <h4 class="service-name">Расслабляющий арома-массаж</h4>
+                            <p class="service-detail">Авторская техника с использованием натуральных эфирных масел</p>
+                        </div>
+                        <div class="service-meta">
+                            <span class="service-time">60 мин</span>
+                            <span class="service-price">3 800 ₽</span>
+                            <button class="btn btn-sm btn-primary open-modal-btn">Записаться</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Портфолио / Галерея -->
+    <section class="section portfolio" id="portfolio">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-subtitle">Портфолио</span>
+                <h2 class="section-title">Примеры наших работ</h2>
+            </div>
+
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <div class="placeholder-box">
+                        <i class="fa-regular fa-image"></i>
+                        <span>Пример работы 1</span>
+                    </div>
+                    <div class="portfolio-overlay">
+                        <span>Окрашивание & Стрижка</span>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="placeholder-box">
+                        <i class="fa-regular fa-image"></i>
+                        <span>Пример работы 2</span>
+                    </div>
+                    <div class="portfolio-overlay">
+                        <span>Авторский Маникюр</span>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="placeholder-box">
+                        <i class="fa-regular fa-image"></i>
+                        <span>Пример работы 3</span>
+                    </div>
+                    <div class="portfolio-overlay">
+                        <span>Вечерняя Укладка</span>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="placeholder-box">
+                        <i class="fa-regular fa-image"></i>
+                        <span>Пример работы 4</span>
+                    </div>
+                    <div class="portfolio-overlay">
+                        <span>Эстетическая Косметология</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Мастера -->
+    <section class="section masters" id="masters">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-subtitle">Профессионалы</span>
+                <h2 class="section-title">Наша команда</h2>
+            </div>
+
+            <div class="masters-grid">
+                <div class="master-card">
+                    <div class="placeholder-box master-img">
+                        <i class="fa-solid fa-user-tie"></i>
+                        <span>Фото Специалиста</span>
+                    </div>
+                    <div class="master-info">
+                        <h3 class="master-name">Анна Смирнова</h3>
+                        <span class="master-role">Топ-стилист, Колорист</span>
+                        <p class="master-exp">Опыт работы: 8 лет</p>
+                    </div>
+                </div>
+
+                <div class="master-card">
+                    <div class="placeholder-box master-img">
+                        <i class="fa-solid fa-user-tie"></i>
+                        <span>Фото Специалиста</span>
+                    </div>
+                    <div class="master-info">
+                        <h3 class="master-name">Елена Иванова</h3>
+                        <span class="master-role">Мастер Ногтевого Сервиса</span>
+                        <p class="master-exp">Опыт работы: 6 лет</p>
+                    </div>
+                </div>
+
+                <div class="master-card">
+                    <div class="placeholder-box master-img">
+                        <i class="fa-solid fa-user-tie"></i>
+                        <span>Фото Специалиста</span>
+                    </div>
+                    <div class="master-info">
+                        <h3 class="master-name">Мария Петрова</h3>
+                        <span class="master-role">Врач-Косметолог</span>
+                        <p class="master-exp">Опыт работы: 10 лет</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Отзывы -->
+    <section class="section reviews" id="reviews">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-subtitle">Впечатления</span>
+                <h2 class="section-title">Отзывы клиентов</h2>
+            </div>
+
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <div class="stars">★★★★★</div>
+                    <p class="review-text">«Замечательный салон! Уже не первый год хожу к мастеру Анне на окрашивание — всегда безупречный результат и бережное отношение к волосам.»</p>
+                    <span class="review-author">— Ольга В.</span>
+                </div>
+
+                <div class="review-card">
+                    <div class="stars">★★★★★</div>
+                    <p class="review-text">«Прекрасная атмосфера, вежливый персонал, вкусный кофе. Маникюр держится идеально больше трех недель. Обязательно вернусь!»</p>
+                    <span class="review-author">— Екатерина М.</span>
+                </div>
+
+                <div class="review-card">
+                    <div class="stars">★★★★★</div>
+                    <p class="review-text">«Была на чистке лица у косметолога Марии. Очень деликатно, подробно ответила на все вопросы по домашнему уходу. Кожа сияет!»</p>
+                    <span class="review-author">— Наталья Д.</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Контакты -->
+    <section class="section contacts" id="contacts">
+        <div class="container">
+            <div class="contacts-wrapper">
+                <div class="contacts-info">
+                    <span class="section-subtitle">Ждем вас</span>
+                    <h2 class="section-title">Контакты</h2>
+
+                    <div class="contact-item">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <div>
+                            <strong>Адрес:</strong>
+                            <p>г. Москва, ул. Примерная, д. 15, стр. 1</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <i class="fa-solid fa-clock"></i>
+                        <div>
+                            <strong>Режим работы:</strong>
+                            <p>Ежедневно: с 09:00 до 21:00</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <i class="fa-solid fa-phone"></i>
+                        <div>
+                            <strong>Телефон:</strong>
+                            <p><a href="tel:+79000000000">+7 (900) 000-00-00</a></p>
+                        </div>
+                    </div>
+
+                    <div class="socials">
+                        <a href="#" class="social-btn"><i class="fa-brands fa-vk"></i></a>
+                        <a href="#" class="social-btn"><i class="fa-brands fa-telegram"></i></a>
+                        <a href="#" class="social-btn"><i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                </div>
+
+                <div class="contacts-map">
+                    <div class="map-placeholder">
+                        <i class="fa-solid fa-map-location-dot"></i>
+                        <p>Интерактивная Карта (Заглушка)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Подвал -->
+    <footer class="footer">
+        <div class="container text-center">
+            <p>&copy; 2026 Fleur. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <!-- Плавающая мобильная кнопка записи -->
+    <div class="floating-btn open-modal-btn">
+        <i class="fa-solid fa-calendar-check"></i>
+    </div>
+
+    <!-- Модальное окно записи -->
+    <div class="modal" id="modal-booking">
+        <div class="modal-overlay" id="modal-overlay"></div>
+        <div class="modal-content">
+            <button class="modal-close" id="modal-close">&times;</button>
+            <h3 class="modal-title">Онлайн-запись</h3>
+            <p class="modal-subtitle">Заполните форму и мы свяжемся с вами для подтверждения</p>
+
+            <form class="booking-form" id="booking-form">
+                <div class="form-group">
+                    <input type="text" placeholder="Ваше имя" required class="form-input">
+                </div>
+                <div class="form-group">
+                    <input type="tel" placeholder="Номер телефона" required class="form-input">
+                </div>
+                <div class="form-group">
+                    <select class="form-input" required>
+                        <option value="">Выберите услугу</option>
+                        <option value="hair">Парикмахерский зал</option>
+                        <option value="nails">Ногтевой сервис</option>
+                        <option value="cosmetology">Косметология</option>
+                        <option value="spa">SPA и Массаж</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <input type="date" class="form-input" required>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">Записаться</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Файл скриптов -->
+    <script src="script.js"></script>
+</body>
+</html>
