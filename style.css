@@ -213,7 +213,7 @@ ul {
     height: 100vh;
     min-height: 600px;
     /*background: linear-gradient(135deg, #4a3b3e 0%, #2b2123 100%);*/
-    background-image: url(images/main.jpg);
+    background-image: url('../images/main.jpg');
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
