@@ -212,11 +212,16 @@ ul {
     position: relative;
     height: 100vh;
     min-height: 600px;
-    background: linear-gradient(135deg, #4a3b3e 0%, #2b2123 100%);
+    /*background: linear-gradient(135deg, #4a3b3e 0%, #2b2123 100%);*/
+    background-image: url(images/main.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
     display: flex;
     align-items: center;
     color: var(--white);
     padding-top: 80px;
+    padding-right: 60vh;
 }
 
 .hero-overlay {
@@ -225,7 +230,7 @@ ul {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.3);
+    /*background: rgba(0, 0, 0, 0.3);*/
 }
 
 .hero-content {
@@ -299,6 +304,10 @@ ul {
 .feature-desc {
     font-size: 14px;
     color: var(--text-muted);
+}
+
+.section-equipment {
+    padding-top: 40px;
 }
 
 /* --- УСЛУГИ И ЦЕНЫ --- */
