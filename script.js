@@ -78,6 +78,26 @@ document.addEventListener('DOMContentLoaded', () => {
     if (bookingForm) {
         bookingForm.addEventListener('submit', (e) => {
             e.preventDefault();
+
+        //     // 1. Gather the input values (replace IDs with your actual input IDs)
+        //     const templateParams = {
+        //     from_name: document.getElementById('user-name').value,
+        //     phone_number: document.getElementById('user-phone').value
+        // };
+
+        // // 2. Send via EmailJS
+        // emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', templateParams)
+        //     .then((response) => {
+        //         console.log('SUCCESS!', response.status, response.text);
+        //         alert('Спасибо! Ваша заявка принята. Мы свяжемся с вами в ближайшее время.');
+        //         closeModal();
+        //         bookingForm.reset();
+        //     })
+        //     .catch((error) => {
+        //         console.error('FAILED...', error);
+        //         alert('Произошла ошибка. Пожалуйста, попробуйте позже.');
+        //     });
+
             alert('Спасибо! Ваша заявка принята. Мы свяжемся с вами в ближайшее время.');
             closeModal();
             bookingForm.reset();
